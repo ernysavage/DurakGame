@@ -1,0 +1,77 @@
+.startPage {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 4rem;
+
+        margin-bottom: 40px;
+    }
+
+    .form__group {
+        width: 30%;
+
+        display: flex;
+        flex-direction: column;
+
+        font-size: 1.5rem;
+
+        margin-bottom: 10px;
+
+        input {
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+
+            margin-top: 10px;
+        }
+    }
+
+    button {
+        padding: 12px 35px;
+
+        border-radius: 32px;
+
+        background-color: #fff;
+
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #bbb;
+        }
+    }
+
+    h2 {
+        margin: 20px 0;
+        font-size: 2rem;
+    }
+
+    ul {
+        width: 40%;
+        list-style-type: none;
+    }
+
+    .game__join {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 40px;
+
+        button {
+            padding: 0;
+            padding: 6px 12px;
+        }
+
+        padding: 10px 20px;
+
+        border: 1px solid #fff;
+    }
+
+}

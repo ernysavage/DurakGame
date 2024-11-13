@@ -1,0 +1,32 @@
+.deck {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    height: 100px; 
+    width: 100px;
+}
+
+.deck li {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.deck li img {
+    width: 140px;
+}
+
+.deck__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.deck__container .count {
+    margin-left: 60px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}

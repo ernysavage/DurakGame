@@ -1,0 +1,23 @@
+.myhand {
+    width: 100%;
+    height: 140px;
+    position: relative;
+    list-style-type: none;
+}
+  
+.myhand li {
+    position: absolute;
+
+    &:hover:not(.selected) {
+        bottom: 10px;
+        cursor: pointer;
+    }
+}
+
+.myhand .selected {
+    bottom: 30px;
+}
+
+.myhand li img {
+    width: 140px;
+}

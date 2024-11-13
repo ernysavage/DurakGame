@@ -1,0 +1,99 @@
+.game {
+    width: 100vw;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.game aside {
+    width: 20%;
+    
+    .actions {
+        width: 150px;
+
+        font-size: 30px;
+
+        margin-top: 60px;
+        margin-left: 30px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+
+        button {
+            padding: 5px 12px;
+        }
+    }
+}
+
+.game .board {
+    width: 80%;
+    min-height: 100vh;
+
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trump__container {
+    margin-left: 40px;
+    margin-bottom: 20px;
+
+    h3 {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: 2rem;
+    }
+
+    .trump {
+        width: 120px;
+        
+    }
+}
+
+.move {
+    img {
+        width: 120px;
+
+        transition: transform 0.3s ease;
+    }
+
+    width: 60%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+    .step {
+        width: 30%;
+        height: 50%;
+
+        position: relative;
+
+        .attacker, .defender {
+            position: absolute;
+        }
+
+        .defender {
+            transform: rotate(15deg);
+            left: 50px;
+            top: 20px;
+        }
+
+        .isDefendable:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.gameStatus {
+    font-size: 1.2rem;
+}
